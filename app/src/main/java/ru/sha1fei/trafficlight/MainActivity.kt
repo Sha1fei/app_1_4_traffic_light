@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val greenButton: Button = findViewById(R.id.button_green)
 
         redButton.setOnClickListener {
-            textView.text = "Красный"
+            textView.setText(R.string.red)
             rootLayout.setBackgroundColor(resources.getColor(R.color.redColor, null))
         }
 
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         greenButton.setOnClickListener {
-            textView.text = resources.getText(R.string.green)
+            textView.setText(R.string.green)
             rootLayout.setBackgroundColor(Color.GREEN)
         }
 
